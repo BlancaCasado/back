@@ -6,12 +6,12 @@
       style="width: 500px"
     >
       <div class="mb-4">
-       <Input
+        <Input
           v-model="username"
           label="Username"
           type="text"
           :error="error.username"
-        /> 
+        />
       </div>
       <div class="mb-6">
         <Input
@@ -47,12 +47,12 @@
 import Input from "../components/Input";
 export default {
   name: "Login",
-  components: { Input },
+  components: {Input},
   data: () => {
     return {
       username: "",
       password: "",
-      error: "",
+      error: ""
     }
   },
   methods: {

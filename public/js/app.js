@@ -922,7 +922,7 @@ var render = function() {
     _vm._v(" "),
     !!_vm.error
       ? _c("p", { staticClass: "text-red-500 text-xs italic" }, [
-          _vm._v("Error")
+          _vm._v(_vm._s(_vm.error))
         ])
       : _vm._e()
   ])

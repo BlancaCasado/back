@@ -6,11 +6,11 @@
     <input
       :value="value"
       @input="value = $event.target.value"
-      :class="{ 'border-red-500' : !!error}"
+      :class="{ 'border-red-500' : !!error }"
       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
       :type="type"
     />
-    <p class="text-red-500 text-xs italic" v-if="!!error">Error</p>
+    <p class="text-red-500 text-xs italic" v-if="!!error">{{error}}</p>
   </div>
 </template>
 
